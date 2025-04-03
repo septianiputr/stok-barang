@@ -1,0 +1,17 @@
+[0;1;32m●[0m php8.2-fpm.service - The PHP 8.2 FastCGI Process Manager
+     Loaded: loaded (/lib/systemd/system/php8.2-fpm.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Wed 2025-04-02 15:10:00 WIB; 3h 58min ago
+       Docs: man:php-fpm8.2(8)
+   Main PID: 787 (php-fpm8.2)
+     Status: "Processes active: 0, idle: 3, Requests: 687, slow: 0, Traffic: 0.00req/sec"
+      Tasks: 4 (limit: 2552)
+     Memory: 115.2M
+        CPU: 3min 39.411s
+     CGroup: /system.slice/php8.2-fpm.service
+             ├─ 787 "php-fpm: master process (/etc/php/8.2/fpm/php-fpm.conf)" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+             ├─ 948 "php-fpm: pool www" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+             ├─ 950 "php-fpm: pool www" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+             └─3089 "php-fpm: pool www" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+
+Apr 02 15:09:58 vps.kstsistemstok.cloud systemd[1]: Starting The PHP 8.2 FastCGI Process Manager...
+Apr 02 15:10:00 vps.kstsistemstok.cloud systemd[1]: Started The PHP 8.2 FastCGI Process Manager.

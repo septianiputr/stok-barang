@@ -60,8 +60,8 @@ Route::middleware('auth')->group(function () {
         BahanBaku::all()->map(function ($bahanBaku) {
             $date = Carbon::parse(Date::now())->format('m/Y');
             $stokBahanBaku = StokBahanBaku::where('tanggal', $date)
-                ->where('bahan_baku_id', $bahanBaku->id)
-                ->first();
+            	->where('bahan_baku_id', $bahanBaku->id)
+             	->first();
 
             if (!$stokBahanBaku) {
                 $stokBahanBaku = new StokBahanBaku();
@@ -87,7 +87,7 @@ Route::middleware('auth')->group(function () {
         });
 
         // Update StokBarangSetengahJadi
-        BarangSetengahJadi::all()->map(function ($barangSetengahJadi) {
+       BarangSetengahJadi::all()->map(function ($barangSetengahJadi) {
             $date = Carbon::parse(Date::now())->format('m/Y');
             $stokBarangSetengahJadi = StokBarangSetengahJadi::where('tanggal', $date)
                 ->where('brg_setengah_jadi_id', $barangSetengahJadi->id)
